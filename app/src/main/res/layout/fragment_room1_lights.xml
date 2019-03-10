@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.milosrasic.burger_test.Room1LightsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/room1_lamp_button"
+        android:layout_alignBottom="@+id/room1_lamp_button"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_toEndOf="@+id/room1_lamp_button"
+        android:layout_toRightOf="@+id/room1_lamp_button"
+        android:text="Lamp button" />
+
+    <Button
+        android:id="@+id/room1_lamp_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Lamp" />
+
+    <WebView
+        android:id="@+id/web_view1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/room1_lights_main_light1_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/room1_lamp_button"
+        android:layout_alignStart="@+id/room1_lamp_button"
+        android:layout_below="@+id/room1_lamp_button"
+        android:layout_marginTop="14dp"
+        android:text="Main Light 1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/room1_lights_main_light1_button"
+        android:layout_alignRight="@+id/room1_lights_main_light1_button"
+        android:layout_below="@+id/room1_lights_main_light1_button"
+        android:text="Main Light 2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/room1_lights_main_light1_button"
+        android:layout_marginTop="38dp"
+        android:layout_toEndOf="@+id/room1_lights_main_light1_button"
+        android:layout_toRightOf="@+id/room1_lights_main_light1_button"
+        android:text="Buttons for the main room light" />
+
+    <CheckBox
+        android:id="@+id/room1_ligths_lumination_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="11dp"
+        android:text="Automatic lamp activation" />
+
+    <CheckBox
+        android:id="@+id/room1_lights_main_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/room1_ligths_lumination_checkbox"
+        android:layout_alignStart="@+id/room1_ligths_lumination_checkbox"
+        android:layout_below="@+id/room1_ligths_lumination_checkbox"
+        android:text="Automatic main light activation" />
+
+</RelativeLayout>

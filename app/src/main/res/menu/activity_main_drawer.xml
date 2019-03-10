@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Home">
+        <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/home_screen"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Home" />
+
+        </group>
+    </item>
+
+
+    <item android:title="Room 1">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/room1_lights"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="Lights" />
+                <item
+                    android:id="@+id/room1_blinds"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="Blinds" />
+                <item
+                    android:id="@+id/room1_temperature"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Temperature" />
+                <item
+                    android:id="@+id/room1_settings"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Settings" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="General">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/general_info"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Info" />
+                <item
+                    android:id="@+id/general_serial_monitor"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Serial Monitor" />
+                <item
+                    android:id="@+id/general_settings"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Settings" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.milosrasic.burger_test.Room1BlindsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:id="@+id/room1_blinds_up_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/room1_blinds_down_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/room1_blinds_down_button"
+        android:layout_marginTop="60dp"
+        android:src="@android:drawable/arrow_up_float" />
+
+    <Button
+        android:id="@+id/room1_blinds_stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/room1_blinds_up_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Stop" />
+
+    <ImageButton
+        android:id="@+id/room1_blinds_down_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/room1_blinds_stop_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@android:drawable/arrow_down_float" />
+
+    <Button
+        android:id="@+id/room1_blinds_completely_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/room1_blinds_down_button"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="All Up"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <WebView
+        android:id="@+id/web_view_blinds"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignEnd="@+id/room1_blinds_stop_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/room1_blinds_stop_button"
+        android:layout_marginBottom="105dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:visibility="invisible">
+
+    </WebView>
+
+    <Button
+        android:id="@+id/room1_blinds_completely_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/room1_blinds_completely_up"
+        android:layout_alignStart="@+id/room1_blinds_completely_up"
+        android:layout_below="@+id/room1_blinds_completely_up"
+        android:text="All Down" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/room1_blinds_completely_up"
+        android:layout_alignBottom="@+id/room1_blinds_completely_up"
+        android:layout_alignLeft="@+id/room1_blinds_down_button"
+        android:layout_alignStart="@+id/room1_blinds_down_button"
+        android:text="Blinds completely Up" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/room1_blinds_completely_down"
+        android:layout_alignBottom="@+id/room1_blinds_completely_down"
+        android:layout_alignLeft="@+id/room1_blinds_down_button"
+        android:layout_alignStart="@+id/room1_blinds_down_button"
+        android:text="Blinds completely Down" />
+
+    <CheckBox
+        android:id="@+id/room1_blinds_alarm_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/room1_blinds_completely_down"
+        android:layout_alignStart="@+id/room1_blinds_completely_down"
+        android:layout_below="@+id/room1_blinds_completely_down"
+        android:text="Alarm controlled blinds"
+        />
+
+    <Button
+        android:id="@+id/room1_blinds_time_picker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/room1_blinds_completely_down"
+        android:layout_alignRight="@+id/room1_blinds_completely_down"
+        android:layout_below="@+id/room1_blinds_alarm_checkbox"
+        android:layout_marginTop="12dp"
+        android:enabled="false"
+        android:text="Time" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/room1_blinds_time_picker_button"
+        android:layout_alignBottom="@+id/room1_blinds_time_picker_button"
+        android:layout_toEndOf="@+id/room1_blinds_time_picker_button"
+        android:layout_toRightOf="@+id/room1_blinds_time_picker_button"
+        android:text="Pick a time for activating the blinds"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/room1_blinds_alarm_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/room1_blinds_time_picker_button"
+        android:enabled="false"/>
+
+    <CheckBox
+        android:id="@+id/room1_blinds_up_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/room1_blinds_time_picker_button"
+        android:layout_alignStart="@+id/room1_blinds_time_picker_button"
+        android:layout_below="@+id/room1_blinds_alarm_text_view"
+        android:text="Open the blinds up"
+        android:enabled="false"/>
+
+    <CheckBox
+        android:id="@+id/room1_blinds_down_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/room1_blinds_up_checkbox"
+        android:layout_alignStart="@+id/room1_blinds_up_checkbox"
+        android:layout_below="@+id/room1_blinds_up_checkbox"
+        android:text="Close the blinds down"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/room1_blinds_cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/room1_blinds_down_checkbox"
+        android:layout_alignStart="@+id/room1_blinds_down_checkbox"
+        android:layout_below="@+id/room1_blinds_down_checkbox"
+        android:enabled="false"
+        android:text="Cancel the alarm" />
+
+</RelativeLayout>
